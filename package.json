@@ -1,0 +1,11 @@
+{
+  "name": "ch5-discovery",
+  "version": "0.2.0",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "@crestron/ch5-crcomlib": "^1.0.0",
+    "@crestron/ch5-theme": "^1.0.0",
+    "material-design-icons": "^3.0.1"
+  }
+}

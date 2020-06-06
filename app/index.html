@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <title>Crestron CH5 Basic</title>
+        <link rel="stylesheet" href="css/discovery.css" />
+        <link rel="stylesheet" href="assets/vendor/light-theme.css" />
+    </head>
+    <body onload=formatAMPM();>
+
+        <div class="div-bar-header">
+            <img id="img-logo" src="./assets/images/Globe_Light.svg">
+            <h1>CH5 Basic Example</h1>
+            <h1 id="date-time"> </h1>
+        </div>
+        <div class="div-bar-middle">
+            <div class="container-source-pages">
+                <ch5-triggerview receivestateshow="11">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Home Page</h1>
+                        <img class="line-horiz" src="assets/images/Line Horizontal.svg">
+                    </div>
+                    <div class=subpage-main>
+                        <p class="home-page-text">A simple example of how Crestron CH5 works.</p>
+                        <p class="home-page-text">With a working emulator so it can be tested in a browser.</p>
+                        <p class="home-page-text">This time using a scss file, although not doing too much with that yet.</p>
+                        <p class="home-page-text">Now with added updating date and time!</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="12">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Laptop Selected</h1>
+                        <img class="line-horiz" src="assets/images/Line Horizontal.svg">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="13">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Video Conference Selected</h1>
+                        <img class="line-horiz" src="assets/images/Line Horizontal.svg">
+                        
+                        
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="14">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Phone</h1>
+                        <img class="line-horiz" src="assets/images/Line Horizontal.svg">
+                    </div>
+                    <div class="div-phone">
+                        <div></div>
+                        <div class="dial-text">
+                            <ch5-textinput
+                                class="text-input-box"
+                                placeholder="0123456789"
+                            ></ch5-textinput>
+                        </div>
+                        <div class="div-btn-backspace">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Backspace"
+                                iconposition="top"
+                                iconurl="assets\images\Delete-Alt_Light.svg"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-green"
+                                customclass="btn-kp-green-custom"
+                                type="default"
+                                stretch="both"
+                                label="Dial"
+                                iconposition="top"
+                                iconurl="assets/images/Phone_Light.svg"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="1"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="2      abc"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="3      def"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Call 1"
+                            ></ch5-button>
+                        </div>
+                        
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-green"
+                                customclass="btn-kp-red-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Hangup"
+                                iconposition="top"
+                                iconurl="assets/images/Phone_Light.svg"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="4      ghi"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="5      jkl"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="6      mno"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Call 2"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Speed Dial 1"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="7      pqrs"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="8      tuv"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="9      wxyz"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box">
+                           
+                        </div>
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Speed Dial 2"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="*"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="0"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box-center">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="#"
+                            ></ch5-button>
+                        </div>
+                        <div class="kp-grid-box">
+                            <ch5-button
+                                class="btn-kp-normal"
+                                customclass="btn-kp-normal-custom"
+                                type="default"
+                                stretch="both"
+                                type="default"
+                                label="Conference"
+                            ></ch5-button>
+                        </div>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="15">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Apple TV Selected</h1>
+                        <img class="line-horiz" src="assets/images/Line Horizontal.svg">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+            </div>
+            <div class="container-volume-controls">
+                <div>
+                    <h2 class="rightbar-label-text">Microphone</h2>
+                    <ch5-toggle id="mic-btn" labelon="On" labeloff="Off" sendeventonclick="100" receivestatevalue="100"></ch5-toggle>
+                </div>
+                <div class="audio-bottom">
+                    <h2 class="rightbar-label-text">Volume</h2>
+                    <div class="volume-controls">
+                        <!-- Buttons -->
+                        <div class="volume-btns">
+                            <ch5-button class="volume-btn" customclass="volume-btn-custom" type="default" stretch="both" label="Up" iconposition="top" iconurl="assets/images/Volume-Hi_Light.svg" sendeventontouch="4"></ch5-button>
+                            <ch5-button class="volume-btn" customclass="volume-btn-custom" type="default" stretch="both" label="Down" iconposition="top" iconurl="assets/images/Volume-Lo_Light.svg" sendeventontouch="5"></ch5-button>
+                            <ch5-button class="volume-btn" customclass="volume-btn-custom" type="default" stretch="both" label="Mute" iconposition="top" iconurl="assets/images/Volume-Mute_Light.svg" sendeventonclick="6" receivestateselected="6"></ch5-button>
+                        </div>
+                        <!-- Guage -->
+                        <div>
+                            <ch5-slider 
+                                customclass="volume-gauge"
+                                orientation="vertical" 
+                                nohandle="true"
+                                receivestatevalue="1"
+                                >
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="div-bar-bottom">
+            <ch5-button class="btn-source" customclass="btn-source-custom" type="default" stretch="both" label="Home" iconurl="assets/images/Home_Light.svg" iconposition="top" sendeventonclick="11" receivestateselected="11"></ch5-button>
+            <ch5-button class="btn-source" customclass="btn-source-custom" type="default" stretch="both" label="Laptop" iconurl="assets/images/Laptop_Light.svg" iconposition="top" sendeventonclick="12" receivestateselected="12"></ch5-button>
+            <ch5-button class="btn-source" customclass="btn-source-custom" type="default" stretch="both" label="Video Conference" iconurl="assets/images/Users_Light.svg" iconposition="top" sendeventonclick="13" receivestateselected="13"></ch5-button>
+            <ch5-button class="btn-source" customclass="btn-source-custom" type="default" stretch="both" label="Phone" iconurl="assets/images/Phone_Light.svg" iconposition="top" sendeventonclick="14" receivestateselected="14"></ch5-button>
+            <ch5-button class="btn-source" customclass="btn-source-custom" type="default" stretch="both" label="Apple TV" iconurl="assets/images/Apple_Light.svg" iconposition="top" sendeventonclick="15" receivestateselected="15"></ch5-button>
+        </div>
+        <script src="assets/vendor/cr-com-lib.js"></script>
+
+        <!-- Comment 2 lines below before archiving or they will run the emulator on the touchpanel -->
+        <script src="assets/vendor/service.js"></script>
+        <script src="assets/vendor/app.js"></script>
+        <!-- *************************************************************************************-->
+        <!-- Date/Time  -->
+        <script>
+            // Updating https://www.plus2net.com/javascript_tutorial/clock.php
+            // Formatting of time/date https://stackoverflow.com/questions/23994748/display-the-current-date-and-time-using-html-and-javascript-with-scrollable-effe
+
+            // the timer
+            function dateTimeRefresh(){
+                var refresh=60000; //refresh time in ms (1000 = 1s 60000 = 1min)
+                myTime=setTimeout('formatAMPM()',refresh)
+            }
+
+            function formatAMPM() {
+                var d = new Date(),
+                minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+                hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+                ampm = d.getHours() >= 12 ? 'pm' : 'am',
+                months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+                //change this for time/date format
+                //var x=hours+':'+minutes+ampm;  //just the time
+                var x=days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate(); //just day / month /date
+                //var x=days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm; 
+                document.getElementById('date-time').innerHTML =x;
+                dateTimeRefresh(); //retrigger the timer
+            }
+        </script>
+
+    </body>
+</html>

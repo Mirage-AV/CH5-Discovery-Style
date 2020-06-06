@@ -1,0 +1,488 @@
+$font-family: Arial, Helvetica, sans-serif;
+$background-color: black;
+$background-image: linear-gradient(to bottom, #000033, black);
+$text-color: white;
+$text-shadow: 1px 1px black;
+$text-font-weight: normal;
+$bar-background: #0000AA30;
+$bar-border: 1px solid #ffffff55; 
+$btn-border-green: 2px solid green;
+$btn-border-red: 2px solid rgb(117, 0, 0);
+$btn-border-normal: 2px solid #ffffff55;
+$btn-border-warning: 2px solid red;
+$border-radius: .8vmin;
+$btn-source-background: rgb(27, 27, 85);
+$btn-source-selected-background: rgb(54, 90, 136) !important;
+$btn-pressed-background: rgb(34, 103, 112) !important;
+$btn-selected-warning: rgb(121, 0, 0) !important;
+$btn-background-green: rgb(43, 77, 43);
+$btn-background-red: rgb(82, 1, 1) !important;
+
+body{
+    background-color: $background-color;
+    background-image: $background-image;
+    font-family: $font-family;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 5px;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: $text-color;
+    text-shadow: $text-shadow;
+    font-family: $font-family;
+}
+
+p{
+    color: $text-color;
+    text-shadow: $text-shadow;
+    font-family: $font-family;
+}
+
+/******** Top section ********/
+.div-bar-header{
+    background-color: $bar-background;
+    border: $bar-border;
+    border-radius: $border-radius;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    #img-logo{
+        width: auto;
+        height: 100%;
+    }
+    
+    #date-time{
+        margin-right: 1vw;
+    }
+}
+
+
+/*****************************/
+/****** Middle Section *******/
+.div-bar-middle{
+    background-color: transparent;
+    height: 70vh; //60% of height
+    width: 100%; //whole width, contains source pages and volume bar
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line-horiz{
+    width: 100%;
+    height: 10px;
+}
+
+/*****************************/
+/******* Source Pages ********/
+.container-source-pages{
+    background-color: $bar-background;
+    border: $bar-border;
+    border-radius: $border-radius;
+    height: 100%;
+    width: 78.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+/* text at top of subpage */
+.subpage-header{
+    height: 10vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .subpage-header-text{
+        margin: 1vh 0;
+    }
+}
+
+/* Phone section */
+.div-phone{
+    //background-color: #000099;
+    height: 55vh; 
+    margin: 2vh 1vw;
+    display: grid;
+    grid-template-columns: 1.3fr .8fr .8fr .8fr 1.3fr;
+    align-content: center;
+    justify-content: center;
+    
+    .dial-text{
+        grid-column: 2/5;
+        height: 9vh;
+        padding: .8em;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ch5-textinput.text-input-box .ch5-textinput__assets{
+        border: $btn-border-normal;
+        border-radius: $border-radius;
+        box-shadow: none; /* hides some of the outline */
+    }
+
+    .ch5-textinput.text-input-box .ch5-textinput__input--regular{
+        color: $text-color;
+        font-size: 2em;
+    }
+
+    .div-btn-backspace{
+        background-color: transparent;
+        margin: 0 0;
+        padding: .8em;
+        height: 9vh;
+    }
+
+    .div-dial-text{
+        background-color: transparent;
+        margin: 0 0;
+        padding: .8em;
+        height: 9vh;
+    }
+
+    .kp-grid-box{
+        margin: 0 .4em;
+        padding: .8em; 
+        background-color: #A0A0A055;
+        height: 9vh;
+    }
+    .kp-grid-box-center{
+        background-color: #A0A0A055;
+        margin: 0 0;
+        padding: .8em;
+        height: 9vh;
+    }
+    .btn-kp-green{
+        background-color: transparent;
+        height: 9vh;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ch5-button.btn-kp-green-custom{
+        background-color: $btn-background-green;
+        border: $btn-border-green;
+        border-radius: $border-radius;
+
+        .ch5-button--img{
+            position: absolute !important;
+            right: 0;
+            top: 0;
+            align-content: center;
+            width: 15%;
+            height: auto;
+        }
+        .ch5-button--label{
+            position: absolute;
+            bottom: 0;
+            margin: 1vh 0;
+            margin-left: 1em;
+            font-size: 1.5em;
+            text-shadow: $text-shadow;
+            color: $text-color;
+            font-weight: $text-font-weight;
+        }
+    }
+
+    .ch5-button.btn-kp-green-custom .cb-btn{
+        padding: 0 !important;
+    }
+
+    
+
+    .ch5-button.btn-kp-red-custom{
+        background-color: $btn-background-red;
+        border: $btn-border-red;
+        border-radius: $border-radius;
+
+        .ch5-button--img{
+            position: absolute !important;
+            right: 0;
+            top: 0;
+            align-content: center;
+            width: 15%;
+            height: auto;
+        }
+        .ch5-button--label{
+            position: absolute;
+            bottom: 0;
+            margin: 1vh 0;
+            margin-left: 1em;
+            font-size: 1.5em;
+            text-shadow: $text-shadow;
+            color: $text-color;
+            font-weight: $text-font-weight;
+        }
+    }
+
+    .ch5-button.btn-kp-red-custom .cb-btn{
+        padding: 0 !important;
+    }
+
+    .btn-kp-normal{
+        background-color: transparent;
+        height: 9vh;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ch5-button.btn-kp-normal-custom{
+        background-color: $btn-source-background;
+        border: $btn-border-normal;
+        border-radius: $border-radius;
+
+        .ch5-button--img{
+            position: absolute !important;
+            right: 0;
+            top: 0;
+            align-content: center;
+            width: 15%;
+            height: auto;
+        }
+
+        .ch5-button--label{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 1vh 0;
+            margin-left: 1em;
+            font-size: 1.5em;
+            text-shadow: $text-shadow;
+            color: $text-color;
+            font-weight: $text-font-weight;
+            white-space: pre-wrap;
+        }
+
+        
+    }
+    
+    .ch5-button--default.ch5-button--pressed{
+        background-color: $btn-pressed-background;
+    }
+
+    .ch5-button.btn-kp-normal-custom .cb-btn{
+        padding: 0 !important;
+    }
+}
+
+.subpage-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .home-page-text{
+        margin-top: 5vh;
+        text-align: center;
+        font-size: 1.8em;
+    }
+}
+
+/*****************************/
+/******* Volume Bar **********/
+.container-volume-controls{
+    background-color: $bar-background;
+    border: $bar-border;
+    border-radius: $border-radius;
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /********* Change look of the light-theme toggle button *************/
+    .ch5-toggle{
+        border: $btn-border-normal;
+        background-color: $btn-source-background;
+    }
+    .ch5-toggle.ch5-toggle--circle .ch5-toggle__handle{
+        background-color: $btn-source-selected-background;
+        //border: $btn-border-normal;
+    }
+    //border of the handle (on state)
+    .ch5-toggle.ch5-toggle--on.ch5-toggle--circle .ch5-toggle__handle{
+        box-shadow: inset 0 0 0 30px rgb(121, 0, 0);
+    }
+
+    .ch5-toggle.ch5-toggle--on.ch5-toggle--circle .ch5-toggle__handle a{
+        background-color: white;
+        border-color: red;
+    }
+
+    .ch5-toggle .ch5-toggle__off-label{
+        color: $text-color;
+        text-shadow: $text-shadow;
+    }
+
+    .ch5-toggle .ch5-toggle__on-label{
+        color: $text-color;
+        text-shadow: $text-shadow;
+    }
+
+    #mic-btn{
+        background-color: $btn-source-background;
+        
+    }
+
+    .volume-controls{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .volume-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .audio-bottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .volume-btn{
+        background-color: transparent;
+        border: 0;
+        width: 100%;
+        height: 25%;
+    }
+
+    .ch5-button.volume-btn-custom{ 
+        border: $btn-border-normal;
+        border-radius: $border-radius;
+        background-color: $btn-source-background;
+        width: 100%;
+
+        .ch5-button--img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: auto;
+        }
+
+        .ch5-button--label{
+            position: absolute;
+            bottom: 0;
+            margin: 1vh 0;
+            font-size: 1.5em;
+            text-shadow: $text-shadow;
+            color: $text-color;
+            font-weight: $text-font-weight;
+        }
+    }
+    .ch5-button--default.ch5-button--pressed{
+        background-color: $btn-pressed-background;
+    }
+    .ch5-button--default.ch5-button--selected{
+        background-color: $btn-selected-warning;
+        border: $btn-border-warning;
+    }
+    
+}
+
+
+
+/*       Volume Gauge                                                  */
+/* does whole thing */
+.ch5-slider.volume-gauge{
+    padding: .5em 0 !important;
+    height: 33vh !important;    
+}
+
+/* Background color, border */
+.ch5-slider.volume-gauge .noUi-target{
+    background: $btn-source-background;
+    border: $btn-border-normal;  
+}
+
+/* Fill color*/
+.ch5-slider.volume-gauge .noUi-connect{
+    background: $btn-source-selected-background;
+}
+
+
+/*****************************/
+/******* Bottom Section **********/
+.div-bar-bottom{
+    background-color: $bar-background;
+    
+    border: $bar-border;
+    border-radius: $border-radius;
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; //horizontal layout
+    align-items: center; //vertical alignment
+    //source select buttons
+    //Contains the ch5-button set overall size and position
+    .btn-source{
+        background-color: transparent;
+        border: 0;
+        width: 18vw;
+        height: 80%;
+    }
+    
+    //Contains the button elements, like a div...
+    .ch5-button.btn-source-custom{ 
+        border: $btn-border-normal;
+        border-radius: $border-radius;
+        width: 100%;
+        background-color: $btn-source-background;
+
+        //the icon
+        .ch5-button--img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20%;
+            height: auto;
+        }
+        //the label
+        .ch5-button--label{
+            position: absolute;
+            bottom: 0;
+            margin: 1vh 0;
+            font-size: 1.5em;
+            text-shadow: $text-shadow;
+            color: $text-color;
+            font-weight: $text-font-weight;
+        }
+        
+    }
+    //Selected state of the butotn (only for default buttons in .div-bar-bottom
+    .ch5-button--default.ch5-button--selected{
+        background-color: $btn-source-selected-background;
+        border: $btn-border-green;
+    }
+       
+}
+
+
