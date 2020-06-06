@@ -26,6 +26,12 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.img-dpad {
+  width: 80%;
+  height: auto;
+  margin-top: 2vh;
+}
+
 /******** Top section ********/
 .div-bar-header {
   background-color: #0000AA30;

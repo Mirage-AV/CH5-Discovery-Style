@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <g id="Group_4" data-name="Group 4" transform="translate(-727 -278)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(727 278)" fill="rgba(255,255,255,0.24)" stroke="rgba(112,112,112,0.8)" stroke-width="1">
+      <circle cx="150" cy="150" r="150" stroke="none"/>
+      <circle cx="150" cy="150" r="149.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(777 328)" fill="rgba(255,255,255,0.05)" stroke="#707070" stroke-width="1">
+      <circle cx="100" cy="100" r="100" stroke="none"/>
+      <circle cx="100" cy="100" r="99.5" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y1="14" x2="10" transform="translate(737.5 414.5)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" x2="10" y2="14" transform="translate(737.5 428.5)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_1-2" data-name="Line 1" y1="14" x2="10" transform="translate(891.5 288.5) rotate(90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_2-2" data-name="Line 2" x2="10" y2="14" transform="translate(877.5 288.5) rotate(90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_1-3" data-name="Line 1" y1="14" x2="10" transform="translate(863.5 567.5) rotate(-90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_2-3" data-name="Line 2" x2="10" y2="14" transform="translate(877.5 567.5) rotate(-90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_1-4" data-name="Line 1" y1="14" x2="10" transform="translate(757.5 414.5)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_2-4" data-name="Line 2" x2="10" y2="14" transform="translate(757.5 428.5)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_1-5" data-name="Line 1" y1="14" x2="10" transform="translate(863.5 547.5) rotate(-90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_2-5" data-name="Line 2" x2="10" y2="14" transform="translate(877.5 547.5) rotate(-90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <g id="Group_3" data-name="Group 3" transform="translate(0 9)">
+      <g id="Group_2" data-name="Group 2">
+        <line id="Line_1-6" data-name="Line 1" y1="14" x2="10" transform="translate(1016.5 433.5) rotate(180)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+        <line id="Line_2-6" data-name="Line 2" x2="10" y2="14" transform="translate(1016.5 419.5) rotate(180)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+      </g>
+      <line id="Line_1-7" data-name="Line 1" y1="14" x2="10" transform="translate(996.5 433.5) rotate(180)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+      <line id="Line_2-7" data-name="Line 2" x2="10" y2="14" transform="translate(996.5 419.5) rotate(180)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    </g>
+    <line id="Line_1-8" data-name="Line 1" y1="14" x2="10" transform="translate(891.5 308.5) rotate(90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+    <line id="Line_2-8" data-name="Line 2" x2="10" y2="14" transform="translate(877.5 308.5) rotate(90)" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1"/>
+  </g>
+</svg>

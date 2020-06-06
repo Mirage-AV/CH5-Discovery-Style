@@ -64,7 +64,7 @@
       }
       
     ],
-    "onStart": [ { "state": "14", "type":"boolean", "value":true },
+    "onStart": [ { "state": "15", "type":"boolean", "value":true },
                   {"state":"1", "type":"number", "value": 30000},
                 {"state":"Contact[0].ItemText", "type":"string","value":"List Item 1" },
                 {"state":"Contact[1].ItemText", "type":"string","value":"List Item 2" },
