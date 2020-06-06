@@ -1,0 +1,457 @@
+body {
+  background-color: black;
+  background-image: linear-gradient(to bottom, #000033, black);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 5px;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/******** Top section ********/
+.div-bar-header {
+  background-color: #0000AA30;
+  border: 1px solid #ffffff55;
+  border-radius: 0.8vmin;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-bar-header #img-logo {
+  width: auto;
+  height: 100%;
+}
+
+.div-bar-header #date-time {
+  margin-right: 1vw;
+}
+
+/*****************************/
+/****** Middle Section *******/
+.div-bar-middle {
+  background-color: transparent;
+  height: 70vh;
+  width: 100%;
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.line-horiz {
+  width: 100%;
+  height: 10px;
+}
+
+/*****************************/
+/******* Source Pages ********/
+.container-source-pages {
+  background-color: #0000AA30;
+  border: 1px solid #ffffff55;
+  border-radius: 0.8vmin;
+  height: 100%;
+  width: 78.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* text at top of subpage */
+.subpage-header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subpage-header .subpage-header-text {
+  margin: 1vh 0;
+}
+
+/* Phone section */
+.div-phone {
+  height: 55vh;
+  margin: 2vh 1vw;
+  display: grid;
+  grid-template-columns: 1.3fr .8fr .8fr .8fr 1.3fr;
+  align-content: center;
+  justify-content: center;
+}
+
+.div-phone .dial-text {
+  grid-column: 2/5;
+  height: 9vh;
+  padding: .8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-phone .ch5-textinput.text-input-box .ch5-textinput__assets {
+  border: 2px solid #ffffff55;
+  border-radius: 0.8vmin;
+  box-shadow: none;
+  /* hides some of the outline */
+}
+
+.div-phone .ch5-textinput.text-input-box .ch5-textinput__input--regular {
+  color: white;
+  font-size: 2em;
+}
+
+.div-phone .div-btn-backspace {
+  background-color: transparent;
+  margin: 0 0;
+  padding: .8em;
+  height: 9vh;
+}
+
+.div-phone .div-dial-text {
+  background-color: transparent;
+  margin: 0 0;
+  padding: .8em;
+  height: 9vh;
+}
+
+.div-phone .kp-grid-box {
+  margin: 0 .4em;
+  padding: .8em;
+  background-color: #A0A0A055;
+  height: 9vh;
+}
+
+.div-phone .kp-grid-box-center {
+  background-color: #A0A0A055;
+  margin: 0 0;
+  padding: .8em;
+  height: 9vh;
+}
+
+.div-phone .btn-kp-green {
+  background-color: transparent;
+  height: 9vh;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-phone .ch5-button.btn-kp-green-custom {
+  background-color: #2b4d2b;
+  border: 2px solid green;
+  border-radius: 0.8vmin;
+}
+
+.div-phone .ch5-button.btn-kp-green-custom .ch5-button--img {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  align-content: center;
+  width: 15%;
+  height: auto;
+}
+
+.div-phone .ch5-button.btn-kp-green-custom .ch5-button--label {
+  position: absolute;
+  bottom: 0;
+  margin: 1vh 0;
+  margin-left: 1em;
+  font-size: 1.5em;
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: normal;
+}
+
+.div-phone .ch5-button.btn-kp-green-custom .cb-btn {
+  padding: 0 !important;
+}
+
+.div-phone .ch5-button.btn-kp-red-custom {
+  background-color: #520101 !important;
+  border: 2px solid #750000;
+  border-radius: 0.8vmin;
+}
+
+.div-phone .ch5-button.btn-kp-red-custom .ch5-button--img {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  align-content: center;
+  width: 15%;
+  height: auto;
+}
+
+.div-phone .ch5-button.btn-kp-red-custom .ch5-button--label {
+  position: absolute;
+  bottom: 0;
+  margin: 1vh 0;
+  margin-left: 1em;
+  font-size: 1.5em;
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: normal;
+}
+
+.div-phone .ch5-button.btn-kp-red-custom .cb-btn {
+  padding: 0 !important;
+}
+
+.div-phone .btn-kp-normal {
+  background-color: transparent;
+  height: 9vh;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-phone .ch5-button.btn-kp-normal-custom {
+  background-color: #1b1b55;
+  border: 2px solid #ffffff55;
+  border-radius: 0.8vmin;
+}
+
+.div-phone .ch5-button.btn-kp-normal-custom .ch5-button--img {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  align-content: center;
+  width: 15%;
+  height: auto;
+}
+
+.div-phone .ch5-button.btn-kp-normal-custom .ch5-button--label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1vh 0;
+  margin-left: 1em;
+  font-size: 1.5em;
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: normal;
+  white-space: pre-wrap;
+}
+
+.div-phone .ch5-button--default.ch5-button--pressed {
+  background-color: #226770 !important;
+}
+
+.div-phone .ch5-button.btn-kp-normal-custom .cb-btn {
+  padding: 0 !important;
+}
+
+.subpage-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subpage-main .home-page-text {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/*****************************/
+/******* Volume Bar **********/
+.container-volume-controls {
+  background-color: #0000AA30;
+  border: 1px solid #ffffff55;
+  border-radius: 0.8vmin;
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /********* Change look of the light-theme toggle button *************/
+}
+
+.container-volume-controls .ch5-toggle {
+  border: 2px solid #ffffff55;
+  background-color: #1b1b55;
+}
+
+.container-volume-controls .ch5-toggle.ch5-toggle--circle .ch5-toggle__handle {
+  background-color: #365a88 !important;
+}
+
+.container-volume-controls .ch5-toggle.ch5-toggle--on.ch5-toggle--circle .ch5-toggle__handle {
+  box-shadow: inset 0 0 0 30px #790000;
+}
+
+.container-volume-controls .ch5-toggle.ch5-toggle--on.ch5-toggle--circle .ch5-toggle__handle a {
+  background-color: white;
+  border-color: red;
+}
+
+.container-volume-controls .ch5-toggle .ch5-toggle__off-label {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.container-volume-controls .ch5-toggle .ch5-toggle__on-label {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.container-volume-controls #mic-btn {
+  background-color: #1b1b55;
+}
+
+.container-volume-controls .volume-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container-volume-controls .volume-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.container-volume-controls .audio-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-volume-controls .volume-btn {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  height: 25%;
+}
+
+.container-volume-controls .ch5-button.volume-btn-custom {
+  border: 2px solid #ffffff55;
+  border-radius: 0.8vmin;
+  background-color: #1b1b55;
+  width: 100%;
+}
+
+.container-volume-controls .ch5-button.volume-btn-custom .ch5-button--img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: auto;
+}
+
+.container-volume-controls .ch5-button.volume-btn-custom .ch5-button--label {
+  position: absolute;
+  bottom: 0;
+  margin: 1vh 0;
+  font-size: 1.5em;
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: normal;
+}
+
+.container-volume-controls .ch5-button--default.ch5-button--pressed {
+  background-color: #226770 !important;
+}
+
+.container-volume-controls .ch5-button--default.ch5-button--selected {
+  background-color: #790000 !important;
+  border: 2px solid red;
+}
+
+/*       Volume Gauge                                                  */
+/* does whole thing */
+.ch5-slider.volume-gauge {
+  padding: .5em 0 !important;
+  height: 33vh !important;
+}
+
+/* Background color, border */
+.ch5-slider.volume-gauge .noUi-target {
+  background: #1b1b55;
+  border: 2px solid #ffffff55;
+}
+
+/* Fill color*/
+.ch5-slider.volume-gauge .noUi-connect {
+  background: #365a88 !important;
+}
+
+/*****************************/
+/******* Bottom Section **********/
+.div-bar-bottom {
+  background-color: #0000AA30;
+  border: 1px solid #ffffff55;
+  border-radius: 0.8vmin;
+  height: 17vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-bar-bottom .btn-source {
+  background-color: transparent;
+  border: 0;
+  width: 18vw;
+  height: 80%;
+}
+
+.div-bar-bottom .ch5-button.btn-source-custom {
+  border: 2px solid #ffffff55;
+  border-radius: 0.8vmin;
+  width: 100%;
+  background-color: #1b1b55;
+}
+
+.div-bar-bottom .ch5-button.btn-source-custom .ch5-button--img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: auto;
+}
+
+.div-bar-bottom .ch5-button.btn-source-custom .ch5-button--label {
+  position: absolute;
+  bottom: 0;
+  margin: 1vh 0;
+  font-size: 1.5em;
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: normal;
+}
+
+.div-bar-bottom .ch5-button--default.ch5-button--selected {
+  background-color: #365a88 !important;
+  border: 2px solid green;
+}

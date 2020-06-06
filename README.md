@@ -17,6 +17,9 @@ In VS Code, install the Crestron Components CH5 extension.
 Close and reopen VS Code after this step.
 I also install Live Server extension by Ritwick Dey, this allows the panel to be run in a browser, right click index.html in the folder view and use the 'Open with Live Server' option
 
+As this is using scss files you need to have a sass compiler, I'm using the VS Code extension "Live Sass Compiler" by Ritwick Day.
+You'll need to make sure its "Watching" (shown in the bar at the bottom of VS Code) the scss file so it builds any changes into the main CSS file.
+
 # Setting up Chrome (excert from "Getting Started: Crestron CH5 Beta PDF)
 Chrome Emulation of TSW-x60 Devices
 While the CH5 emulator feature can emulate control system interactions, it cannot change
