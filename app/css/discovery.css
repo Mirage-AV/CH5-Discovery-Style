@@ -1,3 +1,7 @@
+* {
+  font-size: calc(.2em + 1vw);
+}
+
 body {
   background-color: black;
   background-image: linear-gradient(to bottom, #000033, black);
@@ -277,38 +281,64 @@ p {
   font-size: 1.8em;
 }
 
+#div-appletv-full {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#div-appletv-full .btn-appletv-control {
+  background-color: transparent;
+  border: 0;
+  width: 12vw;
+  height: 12vh;
+}
+
+#div-appletv-full .ch5-button--default.ch5-button--pressed {
+  background-color: #226770 !important;
+  border: 2px solid green;
+}
+
 #div-appletv {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   margin-top: 4vh;
-  width: 100%;
-  height: 50vh;
+  width: 30vw;
+  height: 30vw;
 }
 
 #div-appletv .img-dpad {
-  width: 40%;
+  width: 100%;
   height: auto;
 }
 
 #div-appletv .div-cursor-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 6%;
-  row-gap: 6%;
+  column-gap: 3vw;
+  row-gap: 3vw;
   align-content: center;
   justify-content: center;
-  width: 47%;
-  height: 90%;
+  width: 30vw;
+  height: 30vw;
   position: absolute;
 }
 
 #div-appletv .btn-cursor {
   background-color: transparent;
   border: 0;
-  padding: 25%;
+  padding: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#div-appletv .btn-cursor-top {
+  background-color: transparent;
+  border: 0;
   width: 100% !important;
   height: 100% !important;
 }
@@ -337,7 +367,8 @@ p {
 
 #div-appletv .ch5-button--default.ch5-button--pressed {
   background-color: transparent;
-  background-image: radial-gradient(#ffffff50, #50505050);
+  background-image: radial-gradient(#5555FF50, #50505050);
+  border: 0;
 }
 
 /*****************************/
@@ -489,14 +520,19 @@ p {
   height: 80%;
 }
 
-.div-bar-bottom .ch5-button.btn-source-custom {
+.div-bar-bottom .ch5-button--default.ch5-button--selected {
+  background-color: #365a88 !important;
+  border: 2px solid green;
+}
+
+.ch5-button.btn-source-custom {
   border: 2px solid #ffffff55;
   border-radius: 0.8vmin;
   width: 100%;
   background-color: #1b1b55;
 }
 
-.div-bar-bottom .ch5-button.btn-source-custom .ch5-button--img {
+.ch5-button.btn-source-custom .ch5-button--img {
   position: absolute;
   top: 0;
   right: 0;
@@ -504,17 +540,18 @@ p {
   height: auto;
 }
 
-.div-bar-bottom .ch5-button.btn-source-custom .ch5-button--label {
+.ch5-button.btn-source-custom .ch5-button--label {
   position: absolute;
   bottom: 0;
-  margin: 1vh 0;
-  font-size: 1.5em;
+  left: .1em;
+  margin: 1vh;
+  font-size: 1.3em;
   text-shadow: 1px 1px black;
   color: white;
   font-weight: normal;
 }
 
-.div-bar-bottom .ch5-button--default.ch5-button--selected {
+.ch5-button--default.ch5-button--selected {
   background-color: #365a88 !important;
   border: 2px solid green;
 }

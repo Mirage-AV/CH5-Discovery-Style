@@ -277,58 +277,76 @@
                         <h1 class="subpage-header-text">Apple TV Selected</h1>
                         <img class="line-horiz" src="assets/images/Line Horizontal.svg">
                     </div>
-                    <div id=div-appletv>
-                        <img class="img-dpad" src="assets\images\DPad.svg">
-                        <div class="div-cursor-buttons">
-                            <div> </div>
-                            <ch5-button
-                                class="btn-cursor"
-                                customclass="btn-cursor-custom"
-                                type="default"
-                                stretch="both"
-                                shape="circle"
-                                sendeventonclick="201"
-                            ></ch5-button>
-                            <div> </div>
-                            <ch5-button
-                                class="btn-cursor"
-                                customclass="btn-cursor-custom"
-                                type="default"
-                                stretch="both"
-                                shape="circle"
-                                sendeventonclick="203"
-                            ></ch5-button>
-                            <div>
+                    <div id="div-appletv-full">
+                        <ch5-button
+                            class="btn-appletv-control"
+                            customclass="btn-source-custom"
+                            stretch="both"
+                            iconurl="assets\images\List_Light.svg"
+                            label="Menu"
+                            sendeventonclick="206"
+                        ></ch5-button>
+                        <div id=div-appletv>
+                            <img class="img-dpad" src="assets\images\DPad.svg">
+                            <div class="div-cursor-buttons">
+                                <div> </div>
                                 <ch5-button
-                                class="btn-cursor-center"
-                                customclass="btn-cursor-center-custom"
-                                type="default"
-                                stretch="both"
-                                shape="circle"
-                                label="OK"
-                                sendeventonclick="205"
-                            ></ch5-button>
+                                    class="btn-cursor-top"
+                                    customclass="btn-cursor-custom"
+                                    type="default"
+                                    stretch="both"
+                                    shape="circle"
+                                    sendeventonclick="201"
+                                ></ch5-button>
+                                <div> </div>
+                                <ch5-button
+                                    class="btn-cursor"
+                                    customclass="btn-cursor-custom"
+                                    type="default"
+                                    stretch="both"
+                                    shape="circle"
+                                    sendeventonclick="203"
+                                ></ch5-button>
+                                <div>
+                                    <ch5-button
+                                    class="btn-cursor-center"
+                                    customclass="btn-cursor-center-custom"
+                                    type="default"
+                                    stretch="both"
+                                    shape="circle"
+                                    label="OK"
+                                    sendeventonclick="205"
+                                ></ch5-button>
+                                </div>
+                                <ch5-button
+                                    class="btn-cursor"
+                                    customclass="btn-cursor-custom"
+                                    type="default"
+                                    stretch="both"
+                                    shape="circle"
+                                    sendeventonclick="204"
+                                ></ch5-button>
+                                <div></div>
+                                <ch5-button
+                                    class="btn-cursor"
+                                    customclass="btn-cursor-custom"
+                                    type="default"
+                                    stretch="both"
+                                    shape="circle"
+                                    sendeventonclick="202"
+                                ></ch5-button>
                             </div>
-                            <ch5-button
-                                class="btn-cursor"
-                                customclass="btn-cursor-custom"
-                                type="default"
-                                stretch="both"
-                                shape="circle"
-                                sendeventonclick="204"
-                            ></ch5-button>
-                            <div></div>
-                            <ch5-button
-                                class="btn-cursor"
-                                customclass="btn-cursor-custom"
-                                type="default"
-                                stretch="both"
-                                shape="circle"
-                                sendeventonclick="202"
-                            ></ch5-button>
-                        
                         </div>
+                        <ch5-button
+                            class="btn-appletv-control"
+                            customclass="btn-source-custom"
+                            stretch="both"
+                            iconurl="assets\images\Play-Pause_Light.svg"
+                            label="Play/Pause"
+                            sendeventonclick="207"
+                        ></ch5-button>
                     </div>
+                    
                 </ch5-triggerview>
             </div>
             <div class="container-volume-controls">
