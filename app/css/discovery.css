@@ -1,15 +1,13 @@
 * {
   font-size: calc(.2em + 1vw);
+  box-sizing: border-box;
 }
 
 body {
   background-color: black;
   background-image: linear-gradient(to bottom, #000033, black);
   font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 5px;
+  padding: 2px;
   overflow: hidden;
 }
 
@@ -24,6 +22,10 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 p {
   color: white;
   text-shadow: 1px 1px black;
@@ -35,7 +37,7 @@ p {
   background-color: #0000AA30;
   border: 1px solid #ffffff55;
   border-radius: 0.8vmin;
-  height: 10vh;
+  height: 9vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -58,15 +60,10 @@ p {
   background-color: transparent;
   height: 70vh;
   width: 100%;
-  margin: 1vh 0;
+  margin: .5vh 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.line-horiz {
-  width: 100%;
-  height: 10px;
 }
 
 /*****************************/
@@ -76,7 +73,7 @@ p {
   border: 1px solid #ffffff55;
   border-radius: 0.8vmin;
   height: 100%;
-  width: 78.5vw;
+  width: 78vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +81,6 @@ p {
 
 /* text at top of subpage */
 .subpage-header {
-  height: 10vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -93,7 +89,12 @@ p {
 }
 
 .subpage-header .subpage-header-text {
-  margin: 1vh 0;
+  margin: 0;
+}
+
+.subpage-header .line-horiz {
+  width: 100%;
+  height: 10px;
 }
 
 /* Phone section */
@@ -286,13 +287,16 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  height: 90%;
+  margin-top: 3vh;
 }
 
 #div-appletv-full .btn-appletv-control {
   background-color: transparent;
   border: 0;
   width: 12vw;
-  height: 12vh;
+  height: 8vh;
+  margin-bottom: 1vh;
 }
 
 #div-appletv-full .ch5-button--default.ch5-button--pressed {
@@ -308,7 +312,7 @@ p {
   box-sizing: border-box;
   margin-top: 4vh;
   width: 30vw;
-  height: 30vw;
+  height: 100%;
 }
 
 #div-appletv .img-dpad {
@@ -378,7 +382,7 @@ p {
   border: 1px solid #ffffff55;
   border-radius: 0.8vmin;
   height: 100%;
-  width: 20vw;
+  width: 19vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -505,7 +509,7 @@ p {
   background-color: #0000AA30;
   border: 1px solid #ffffff55;
   border-radius: 0.8vmin;
-  height: 17vh;
+  height: 16vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -530,6 +534,10 @@ p {
   border-radius: 0.8vmin;
   width: 100%;
   background-color: #1b1b55;
+}
+
+.ch5-button.btn-source-custom .cb-btn {
+  padding: 0 !important;
 }
 
 .ch5-button.btn-source-custom .ch5-button--img {

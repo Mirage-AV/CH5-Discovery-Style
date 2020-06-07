@@ -20,17 +20,14 @@ $btn-background-red: rgb(82, 1, 1) !important;
 
 *{
     font-size: calc(.2em + 1vw);
+    box-sizing: border-box;
 }
 body{
     background-color: $background-color;
     background-image: $background-image;
     font-family: $font-family;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 5px;
+    padding: 2px;
     overflow: hidden;
-    
 }
 
 h1,
@@ -42,6 +39,10 @@ h6{
     color: $text-color;
     text-shadow: $text-shadow;
     font-family: $font-family;
+}
+
+h1{
+    font-size: 2em;
 }
 
 p{
@@ -56,7 +57,7 @@ p{
     background-color: $bar-background;
     border: $bar-border;
     border-radius: $border-radius;
-    height: 10vh;
+    height: 9vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -78,17 +79,12 @@ p{
 /****** Middle Section *******/
 .div-bar-middle{
     background-color: transparent;
-    height: 70vh; //60% of height
+    height: 70vh;
     width: 100%; //whole width, contains source pages and volume bar
-    margin: 1vh 0;
+    margin: .5vh 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.line-horiz{
-    width: 100%;
-    height: 10px;
 }
 
 /*****************************/
@@ -98,17 +94,14 @@ p{
     border: $bar-border;
     border-radius: $border-radius;
     height: 100%;
-    width: 78.5vw;
+    width: 78vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    
 }
 
 /* text at top of subpage */
 .subpage-header{
-    height: 10vh;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -116,7 +109,12 @@ p{
     align-items: center;
     
     .subpage-header-text{
-        margin: 1vh 0;
+        margin: 0;
+    }
+
+    .line-horiz{
+        width: 100%;
+        height: 10px;
     }
 }
 
@@ -307,12 +305,15 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-
+    height: 90%;
+    margin-top: 3vh;;
+    
     .btn-appletv-control{
         background-color: transparent;
         border: 0;
         width: 12vw;
-        height: 12vh;
+        height: 8vh;
+        margin-bottom: 1vh;
     }
     .ch5-button--default.ch5-button--pressed{
         background-color: $btn-pressed-background;
@@ -328,7 +329,7 @@ p{
     box-sizing: border-box;
     margin-top: 4vh;
     width: 30vw;
-    height: 30vw;
+    height: 100%;
     
     .img-dpad{
         width: 100%;
@@ -400,7 +401,7 @@ p{
     border: $bar-border;
     border-radius: $border-radius;
     height: 100%;
-    width: 20vw;
+    width: 19vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -530,7 +531,7 @@ p{
     
     border: $bar-border;
     border-radius: $border-radius;
-    height: 17vh;
+    height: 16vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -559,7 +560,10 @@ p{
     border-radius: $border-radius;
     width: 100%;
     background-color: $btn-source-background;
-
+    .cb-btn
+    {
+        padding: 0 !important;
+    }
     //the icon
     .ch5-button--img{
         position: absolute;

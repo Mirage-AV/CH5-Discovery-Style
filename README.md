@@ -4,7 +4,8 @@ It's also, probably, not the best practice for HTML/CSS... it's just been create
 Releasing this as is, with no support provided.
 
 # Graphics
-All icons are from the CRestron Neo theme
+All icons are from the Crestron Neo theme.
+The Dpad image is my own, created in Adobe XD, you are welcome to use it for any other projects.
 
 # Installation
 First you will need to install node.js from https://nodejs.org
